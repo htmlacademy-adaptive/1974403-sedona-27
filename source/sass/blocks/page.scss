@@ -1,0 +1,28 @@
+.page {
+  margin: 0;
+  padding: 0;
+  background-color: $color-whisper-2;
+
+  @media (min-width: $desktop-width) {
+    min-width: 1200px;
+  }
+}
+
+.page__body {
+  max-width: 1200px;
+  height: 100%;
+  font-family: $font-family-main;
+  color: $color-default-black;
+  background-color: $color-default-white;
+  margin: 0 auto;
+  padding: 0;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+    margin: 0 auto;
+  }
+}

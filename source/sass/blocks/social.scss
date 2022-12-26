@@ -1,0 +1,31 @@
+.social__item {
+  width: 48px;
+  height: 48px;
+  position: relative;
+}
+
+.social__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  background-color: $color-seagull;
+
+  &:hover {
+    background-color: $color-shakespeare;
+  }
+
+  &:active {
+    background-color: $color-shakespeare-2;
+
+    svg {
+      opacity: 0.3;
+    }
+  }
+}
+
+// .social__link--vk {
+//   width: 24px;
+//   height: 24px;
+// }

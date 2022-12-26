@@ -1,0 +1,120 @@
+.visit {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  border-style: none;
+  padding: 0 20px;
+  border-bottom: 1px solid $color-whisper-2;
+
+  @media (min-width: $tablet-width) {
+    border-top: 1px solid $color-whisper-2;
+    border-bottom: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 20px 45px;
+  }
+}
+
+.visit-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 28px 34px 17px 61px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-between;
+    padding: 28px 24px 17px;
+  }
+}
+
+.visit__title {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+  margin-bottom: 30px;
+  padding-top: 22px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 21px;
+    margin-bottom: 9px;
+    padding: 0 100px;
+    background-color: transparent;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 40px;
+  }
+}
+
+.visit-list__item {
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+  margin-bottom: 36px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 16px;
+  }
+}
+
+.visit-list__label {
+  position: relative;
+  display: block;
+  padding-left: 62px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 20px;
+  }
+}
+
+.visit-list__input[type="checkbox"] + .visit-list__option {
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.visit-list__option {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 46px;
+  height: 46px;
+  transform: translateY(-50%);
+  background-color: $color-white-smoke;
+
+  &:hover {
+    background-color: $color-whisper-2;
+  }
+
+  &:active {
+    background-color: $color-light-grey;
+  }
+}
+
+.visit-list__input[type="checkbox"]:checked + .visit-list__option::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 22px;
+  height: 16px;
+  background-image: url("../img/form/tick.svg.svg");
+  transform: translate(-50%, -50%);
+}
+
+.visit-list__input[type="checkbox"]:checked:active + .visit-list__option::before {
+  opacity: 0.3;
+}
+
+.visit-list__input:focus + .visit-list__option {
+  background-color: $color-whisper-2;
+  outline: none;
+}

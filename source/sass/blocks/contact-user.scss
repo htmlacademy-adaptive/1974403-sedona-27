@@ -1,0 +1,120 @@
+.contact-user {
+  padding: 0 20px 19px;
+  border-style: none;
+  border-bottom: 1px solid $color-whisper-2;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
+    border: none;
+    padding: 0 0 46px 0;
+    max-height: 433px;
+  }
+
+  @media (min-width: $desktop-width) {
+    border-left: 1px solid $color-gainsboro;
+  }
+}
+
+.contact-user__phone::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 58px;
+  height: 58px;
+  background-color: $color-whisper-2;
+  background-image: url("../img/phone.svg");
+  background-size: 18px 18px;
+  background-position: center;
+  background-repeat: no-repeat;
+  right: 0;
+}
+
+.contact-user__email::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 58px;
+  height: 58px;
+  background-color: $color-whisper-2;
+  background-image: url("../../img/mail.svg");
+  background-size: 18px 18px;
+  background-position: center;
+  background-repeat: no-repeat;
+  right: 0;
+}
+
+.contact-user__item label {
+  margin-left: 14px;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 12px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 13px;
+  }
+}
+
+.contact-user__list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 45px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 78px;
+  }
+}
+
+.contact-user__title {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 26px;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 20px;
+  padding-top: 24px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 28px;
+    font-size: 21px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 12px;
+  }
+}
+
+.contact-user__item {
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+  line-height: 21px;
+  text-transform: uppercase;
+  color: $color-night-rider;
+  margin-bottom: 15px;
+  position: relative;
+}
+
+.contact-user__input {
+  background-color: $color-white-smoke;
+  border: none;
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: 700;
+  color: $color-default-black;
+  height: 58px;
+  padding-left: 16px;
+
+  @media (min-width: $tablet-width) {
+    max-width: 280px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 430px;
+  }
+}

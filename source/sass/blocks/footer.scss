@@ -1,0 +1,134 @@
+.footer--main {
+  margin-top: 10px;
+  padding-top: 26px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  background-color: $color-default-white;
+  margin: 0;
+  padding-top: 26px;
+  padding-bottom: 29px;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 33px 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 118px;
+    padding-right: 120px;
+    padding-top: 32px;
+  }
+}
+
+.footer--form {
+  padding-top: 55px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 100px;
+  }
+}
+
+.footer--catalog {
+  padding-top: 30px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 75px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 57px;
+  }
+}
+
+.footer__hashtag {
+  font-size: 21px;
+  margin: 0;
+  margin-bottom: 33px;
+  line-height: 26px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  color: $color-default-black;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
+}
+
+.footer__social {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  margin-bottom: 40px;
+  list-style-type: none;
+  justify-content: center;
+  gap: 6px;
+  padding: 0 80px 0 84px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    padding-left: 71px;
+  }
+}
+
+.footer__developed-logo {
+  align-self: center;
+  margin: 0;
+  fill: $color-default-black;
+}
+
+.footer__developed-link {
+  display: flex;
+  color: $color-default-black;
+  text-decoration: none;
+  padding-right: 95px;
+  padding-left: 96px;
+  justify-content: center;
+
+  &:hover {
+    .footer__developed-description {
+      color: $color-seagull;
+    }
+
+    .footer__developed-logo {
+      fill: $color-seagull;
+    }
+  }
+
+  &:active {
+    .footer__developed-description {
+      color: $color-pink-swan;
+    }
+
+    .footer__developed-logo {
+      fill: $color-pink-swan;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+  }
+}
+
+.footer__developed-description {
+  min-width: 118px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  align-self: center;
+  margin: 0;
+  margin-left: -14px;
+  margin-right: -5px;
+  padding-right: 3px;
+  text-transform: uppercase;
+  text-align: center;
+}
