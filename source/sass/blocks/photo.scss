@@ -1,0 +1,253 @@
+.photo {
+  @media (min-width: $tablet-width) {
+    padding: 0 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+  }
+}
+
+.photo-description {
+  padding: 40px 20px 34px 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 62px 101px 86px;
+    border: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 100px 377px 92px;
+  }
+}
+
+.photo-description__title {
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 26px;
+  margin-top: 0;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+    margin-bottom: 33px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 29px;
+  }
+}
+
+.photo-description__text {
+  font-size: 14px;
+  line-height: 21px;
+  text-transform: uppercase;
+  text-align: center;
+  color: $color-night-rider;
+  margin: 0;
+}
+
+.photos__images {
+  border-top: 1px solid $color-whisper-2;
+  padding: 24px 20px 23px;
+
+  @media (min-width: $tablet-width) {
+    border: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: relative;
+  }
+}
+
+.photos__images img {
+  min-height: 280px;
+  min-width: 100%;
+  margin-bottom: 13px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
+}
+
+.photo__list {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  border-bottom: 1px solid $color-whisper-2;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    border-style: none;
+    padding: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-direction: row;
+    border-style: none;
+    padding: 0;
+  }
+}
+
+.photo__list-item {
+  padding: 24px 20px 24px;
+  border-top: 1px solid $color-whisper-2;
+
+  @media (min-width: $tablet-width) {
+    border-style: none;
+    padding: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: relative;
+  }
+}
+
+.photo__list-item img {
+  min-width: 100%;
+  margin-bottom: 12px;
+
+  @media (min-width: $tablet-width) {
+    border-style: none;
+    padding: 0;
+    margin: 0;
+  }
+}
+
+.photo__list-title {
+  padding: 0;
+  margin-bottom: 10px;
+  margin-top: 0;
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.photo__list-text {
+  margin: 0;
+}
+
+.photos__photo {
+  margin-bottom: 15px;
+  align-self: center;
+  width: 280px;
+  height: 280px;
+
+  @media (min-width: $tablet-width) {
+    width: 324px;
+    height: 267px;
+    margin: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 400px;
+  }
+}
+
+.photos__info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 19px 14px 15px 21px;
+    background-color: $color-white-smoke;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: -80px;
+    color: $color-default-white;
+    background-color: rgba($color-default-black, 0.5);
+    z-index: 1;
+    position: relative;
+  }
+}
+
+.photos__description {
+  text-align: start;
+  padding-bottom: 16px;
+
+  @media (min-width: $tablet-width) {
+    min-height: 43px;
+    padding: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: -3px;
+  }
+}
+
+.photos__item--first .photos__description {
+  @media (min-width: $desktop-width) {
+    margin-top: 0;
+  }
+}
+
+.photos__title {
+  margin: 0;
+  font-size: 14px;
+  line-height: 21px;
+  text-transform: uppercase;
+}
+
+.photos__author {
+  font-size: 14px;
+  line-height: 21px;
+  margin: 0;
+  font-weight: 400;
+  text-transform: none;
+  color: $color-night-rider;
+
+  @media (min-width: $desktop-width) {
+    color: $color-default-white;
+  }
+}
+
+.photos__like {
+  position: relative;
+  border: 0;
+  font-family: "PT Sans", "Arial", sans-serif;
+  color: $color-default-black;
+  background-color: initial;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 21px;
+  padding-left: 37px;
+  cursor: pointer;
+
+  @media (min-width: $desktop-width) {
+    color: $color-default-white;
+  }
+}
+
+.photos__like::before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: 5px;
+  width: 23px;
+  height: 21px;
+  background-image: url("../img/like.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+
+  @media (min-width: $tablet-width) {
+    left: 5px;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-image: url("../img/like--desktop.svg");
+  }
+}

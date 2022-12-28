@@ -1,0 +1,120 @@
+.impression {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  border-style: none;
+  border-bottom: 1px solid $color-whisper-2;
+  padding: 0 20px;
+
+  @media (min-width: $tablet-width) {
+    border-bottom: none;
+    border-top: 1px solid $color-whisper-2;
+  }
+}
+
+.impression-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 28px 14px 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-between;
+    padding: 28px 16px 46px 30px;
+  }
+}
+
+.impression-title {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+  margin-bottom: 31px;
+  padding-top: 24px;
+
+  @media (min-width: $tablet-width) {
+    @media (min-width: $tablet-width) {
+      font-size: 21px;
+      margin-bottom: 4px;
+      padding: 6px 100px;
+      background-color: transparent;
+    }
+  }
+}
+
+.impression-list__item {
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+  margin-bottom: 36px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 18px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 17px;
+    padding-right: 14px;
+  }
+}
+
+.impression-list__label {
+  position: relative;
+  display: block;
+  padding-left: 62px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 20px;
+  }
+}
+
+.impression-list__input[type="radio"] + .impression-list__option {
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.impression-list__option {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 46px;
+  height: 46px;
+  transform: translateY(-50%);
+  background-color: $color-white-smoke;
+
+  &:hover {
+    background-color: $color-whisper-2;
+  }
+
+  &:active {
+    background-color: $color-light-grey;
+  }
+}
+
+.impression-list__input[type="radio"]:checked + .impression-list__option::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 30%;
+  width: 16px;
+  height: 16px;
+  background-color: $color-night-rider;
+  border-radius: 50%;
+  transform: translateY(-50%);
+}
+
+.impression-list__input[type="radio"]:checked:active + .impression-list__option::before {
+  opacity: 0.3;
+}
+
+.impression-list__input:focus + .impression-list__option {
+  background-color: $color-whisper-2;
+  outline: none;
+}

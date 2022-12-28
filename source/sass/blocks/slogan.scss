@@ -1,0 +1,20 @@
+.slogan__logo {
+  width: 282px;
+  height: 214px;
+  display: block;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    width: 461px;
+    height: 350px;
+    display: block;
+    margin: 0 auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 460px;
+    height: 350px;
+    display: block;
+    margin: 0 auto;
+  }
+}

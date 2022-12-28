@@ -1,0 +1,145 @@
+.modal-container {
+  background-color: $color-whisper-2;
+  flex-direction: column;
+  align-items: center;
+  display: none;
+}
+
+.modal--failture .modal-container--failture {
+  display: flex;
+}
+
+.modal--success .modal-container--success {
+  display: flex;
+}
+
+.modal-container__title {
+  font-size: 18px;
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+    line-height: 40px;
+  }
+}
+
+.modal-container__description {
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  margin: 0;
+}
+
+.modal-container__button {
+  font-size: 18px;
+}
+
+.modal-container--failture {
+  position: absolute;
+  top: calc(50vh - 280px);
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 237px;
+  padding: 45px 40px 37px 43px;
+
+  .modal-container__title {
+    margin-bottom: 25px;
+
+    @media (min-width: $tablet-width) {
+      max-width: 250px;
+      margin-bottom: 22px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-bottom: 26px;
+    }
+  }
+
+  .modal-container__description {
+    margin-bottom: 28px;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 48px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-bottom: 46px;
+    }
+  }
+
+  .modal-container__button {
+    width: 180px;
+    padding: 18px 64px 14px 63px;
+
+    @media (min-width: $tablet-width) {
+      width: 272px;
+      font-size: 21px;
+      line-height: 26px;
+      padding: 18px 108px 14px 107px;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 307px;
+    padding: 48px 47px 49px 46px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 45px 46px 50px 47px;
+  }
+}
+
+.modal-container--success {
+  position: absolute;
+  top: calc(50vh - 323px);
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 244px;
+  padding: 39px 39px 20px 37px;
+
+  .modal-container__title {
+    margin-bottom: 26px;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 23px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-bottom: 25px;
+    }
+  }
+
+  .modal-container__description {
+    margin-bottom: 70px;
+    color: $color-night-rider;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 97px;
+    }
+  }
+
+  .modal-container__button {
+    width: 280px;
+    padding: 18px 62px 14px 60px;
+    box-shadow: 0 0 0 20px $color-white-smoke;
+
+    @media (min-width: $tablet-width) {
+      width: 458px;
+      padding: 18px 140px 14px 139px;
+      font-size: 21px;
+      line-height: 26px;
+      box-shadow: 47px 0 0 44px $color-white-smoke, -46px 0 0 44px $color-white-smoke;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 458px;
+    padding: 45px 92px 44px 90px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 41px 92px 40px 90px;
+  }
+}
