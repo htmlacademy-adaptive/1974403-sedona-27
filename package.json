@@ -1,5 +1,5 @@
 {
-  "name": "sedona-25",
+  "name": "sedona-27",
   "private": true,
   "description": "Личный проект «Седона» от HTML Academy",
   "devDependencies": {
@@ -24,7 +24,7 @@
   },
   "scripts": {
     "editorconfig": "editorconfig-cli",
-    "stylelint": "stylelint \"source/sass//*.scss\" --syntax scss",
+    "stylelint": "stylelint \"source/sass/**/*.scss\" --syntax scss",
     "lint": "npm run editorconfig && npm run stylelint",
     "build": "gulp build",
     "start": "gulp"
