@@ -49,7 +49,7 @@
   margin: 0;
 }
 
-.photos__images {
+.photos-images {
   border-top: 1px solid $color-whisper-2;
   padding: 24px 20px 23px;
 
@@ -64,7 +64,7 @@
   }
 }
 
-.photos__images img {
+.photos-images img {
   min-height: 280px;
   min-width: 100%;
   margin-bottom: 13px;
@@ -152,7 +152,7 @@
   }
 }
 
-.photos__info {
+.photos {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
