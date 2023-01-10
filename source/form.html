@@ -5,8 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Городок Седона.</title>
-    <link rel="preload" href="/source/fonts/ptsansbold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
-    <link rel="preload" href="/source/fonts/ptsans.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="./fonts/ptsans.woff" as="font">
+    <link rel="preload" href="./fonts/ptsans.woff2" as="font">
+    <link rel="preload" href="./fonts/ptsansbold.woff" as="font">
+    <link rel="preload" href="./fonts/ptsansbold.woff2" as="font">
     <link rel="stylesheet" href="./css/style.min.css" />
   </head>
   <body class="page__body">
@@ -88,15 +90,15 @@
             <ul class="user__list">
               <li class="user__item">
                 <label for="name">Имя*: </label>
-                <input class="user__input" type="text" id="name" name="user_name" placeholder="Пётр" />
+                <input class="user__input" type="text" id="name" name="user_name" placeholder="Имя" value="Петр" disabled/>
               </li>
               <li class="user__item">
                 <label for="last-name">Фамилия*:</label>
-                <input class="user__input" type="text" id="last-name" name="user_last-name" placeholder="Пустота" />
+                <input class="user__input" type="text" id="last-name" name="user_last-name" placeholder="Фамилия" value="Пустота"/>
               </li>
               <li class="user__item">
                 <label for="patronymic">Отчество:</label>
-                <input class="user__input" type="text" id="patronymic" name="user_patronymic" placeholder="Викторович" />
+                <input class="user__input" type="text" id="patronymic" name="user_patronymic" placeholder="Отчество" value="Викторович" />
               </li>
             </ul>
           </fieldset>
