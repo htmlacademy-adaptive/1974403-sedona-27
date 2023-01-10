@@ -1,1 +1,0 @@
-const mainNavigation=document.querySelector(".main-navigation"),mainNavigationToggle=document.querySelector(".main-navigation__toggle");mainNavigation.classList.remove("no-js"),mainNavigationToggle.addEventListener("click",(i=>{i.preventDefault(),mainNavigation.classList.toggle("is-open")}));
