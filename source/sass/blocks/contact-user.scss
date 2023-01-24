@@ -10,10 +10,6 @@
     padding: 0 0 46px 0;
     max-height: 433px;
   }
-
-  @media (min-width: $desktop-width) {
-    border-left: 1px solid $color-gainsboro;
-  }
 }
 
 .contact-user__phone::after {
@@ -62,7 +58,7 @@
   padding: 0;
 
   @media (min-width: $tablet-width) {
-    padding-left: 45px;
+    padding-left: 43px;
   }
 
   @media (min-width: $desktop-width) {
@@ -135,4 +131,8 @@
     max-width: 430px;
     padding-left: 14px;
   }
+}
+
+.contact-user__input::placeholder {
+  color: $color-whisper-form;
 }

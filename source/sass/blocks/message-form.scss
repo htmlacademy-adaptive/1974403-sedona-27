@@ -2,7 +2,7 @@
   text-align: center;
   display: flex;
   flex-direction: column;
-  padding: 24px 20px 29px;
+  padding: 24px 20px 24px;
   border-style: none;
 
   @media (min-width: $tablet-width) {
@@ -41,7 +41,6 @@
   line-height: 26px;
   padding: 16px;
   resize: none;
-  cursor: pointer;
   outline: none;
   margin-bottom: 56px;
 
@@ -66,6 +65,10 @@
     padding-top: 17px;
     padding-left: 14px;
   }
+}
+
+.message-form__textarea::placeholder {
+  color: $color-whisper-form;
 }
 
 .message-form__wrapper {
@@ -107,6 +110,7 @@
 
   @media (min-width: $desktop-width) {
     width: 384px;
+    padding-right: 8px;
   }
 }
 

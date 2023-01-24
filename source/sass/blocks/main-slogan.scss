@@ -1,5 +1,5 @@
 .main-slogan {
-  height: 389px;
+  height: 388px;
   position: relative;
   color: $color-default-white;
   background-color: $color-whisper;
@@ -21,7 +21,7 @@
     background-image: url("../img/intro/welcome-decoration.svg");
     background-position: center;
     background-repeat: no-repeat;
-    bottom: -2px;
+    bottom: -1px;
     left: 0;
   }
 
@@ -31,6 +31,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     padding-top: 77px;
+
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/intro/welcome-background@2x--tablet.jpg");

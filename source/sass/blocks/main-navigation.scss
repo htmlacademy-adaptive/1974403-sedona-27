@@ -2,6 +2,7 @@
   width: 100%;
   padding: 0;
   margin: 0;
+  padding-top: 56px;
 
   &--opened {
     z-index: 1;
@@ -9,6 +10,7 @@
 
   @media (min-width: $tablet-width) {
     z-index: 0;
+    padding-top: 0;
   }
 }
 
@@ -22,6 +24,7 @@
   border: none;
   cursor: pointer;
   background-color: transparent;
+  z-index: 20;
 
   &:hover {
     opacity: 70%;
@@ -37,7 +40,9 @@
 }
 
 .main-navigation__wrapper {
-  padding-top: 56px;
+  padding-top: 0;
+  top: 0;
+  left: 0;
 
   @media (min-width: $tablet-width) {
     padding: 0;
@@ -144,7 +149,7 @@
   line-height: 26px;
   color: $color-default-white;
   white-space: nowrap;
-  padding-top: 17px;
+  padding-top: 18px;
   padding-bottom: 12px;
 
   &:active {
@@ -186,6 +191,9 @@
 .main-navigation.no-js .main-navigation__wrapper,
 .main-navigation.is-open .main-navigation__wrapper {
   padding: 0;
+  position: absolute;
+  width: 100%;
+  z-index: 10;
 }
 
 .main-navigation.no-js,

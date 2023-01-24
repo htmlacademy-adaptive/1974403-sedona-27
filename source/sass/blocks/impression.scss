@@ -68,22 +68,29 @@
 .impression-list__label {
   position: relative;
   display: block;
-  padding-left: 62px;
+  padding-left: 60px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 20px;
+    padding-left: 64px;
   }
 }
 
 .impression-list__input[type="radio"] + .impression-list__option {
   border-radius: 50%;
   cursor: pointer;
+
+  &:disabled {
+    background-color: $color-black-transparent;
+    opacity: 0.3;
+    cursor: auto;
+  }
 }
 
 .impression-list__option {
   position: absolute;
   top: 50%;
-  left: 0;
+  left: 3px;
   width: 46px;
   height: 46px;
   transform: translateY(-50%);
