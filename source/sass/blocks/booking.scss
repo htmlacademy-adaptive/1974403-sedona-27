@@ -1,13 +1,13 @@
 .booking__header {
   text-align: center;
-  padding: 43px 18px 49px;
+  padding: 44px 18px 48px;
 
   @media (min-width: $tablet-width) {
     padding: 61px 155px 58px 155px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 59px 370px 66px;
+    padding: 64px 316px 68px;
   }
 }
 
@@ -40,7 +40,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 48px;
+    margin-bottom: 45px;
   }
 }
 
@@ -94,7 +94,13 @@
 .booking__map {
   position: relative;
   max-width: 100%;
-  min-height: 350px;
+  height: 350px;
+  margin-bottom: 10px;
+
+  @media (min-width: $tablet-width) {
+    height: 350px;
+    margin-bottom: 0;
+  }
 }
 
 .booking__map iframe {
@@ -113,7 +119,7 @@
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
+  height: 350px;
   display: block;
   margin: 0;
 }

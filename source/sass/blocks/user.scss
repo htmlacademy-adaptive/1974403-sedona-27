@@ -4,16 +4,16 @@
   border-bottom: 1px solid $color-whisper-2;
 
   @media (min-width: $tablet-width) {
-    padding: 0 46px 20px 0;
-    margin-bottom: 20px;
+    padding: 0 41px 0 0;
+    margin-bottom: 40px;
     border-right: 1px solid $color-gainsboro;
     border-bottom: none;
   }
 
   @media (min-width: $desktop-width) {
-    padding-right: 47px;
-    margin-bottom: 29px;
-    border-right: none;
+    padding: 0 41px 0 0;
+    margin-bottom: 48px;
+    border-right: 1px solid $color-gainsboro;
     border-bottom: none;
   }
 }
@@ -40,7 +40,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-left: 64px;
+    padding-left: 57px;
   }
 }
 
@@ -95,8 +95,9 @@
   }
 
   &:disabled {
-    background-color: rgba( 0, 0, 0, 0.1);
-    opacity: 0.1;
+    background-color: $color-black-transparent;
+    opacity: 0.3;
+    cursor: auto;
   }
 
   @media (min-width: $tablet-width) {
